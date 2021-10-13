@@ -9,6 +9,7 @@ void mergesort(int array[], int low, int high);
 
 int main()
 {
+    // aqui especificamos o numeros de threads
     #pragma omp parallel num_threads(4){}
     int *a, num = 25, i, v = 1000, j;
 
