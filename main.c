@@ -10,9 +10,9 @@ void mergesort(int array[], int low, int high);
 int main()
 {
     // aqui especificamos o numeros de threads
-    #pragma omp parallel num_threads(4){}
-    int *a, num = 25, i, v = 1000, j;
 
+    int *a = 0, num = 25, i, v = 1000, j;
+    #pragma omp parallel num_threads(4)
 
     srand(time(NULL));
     // malloc = memoria
@@ -37,7 +37,7 @@ int main()
         v = v * 2;
     }
         return 0;
-    
+
 
 }
 
